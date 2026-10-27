@@ -13,6 +13,8 @@ const holidays: Holiday[] = [
   {at:"2026-12-08",name:"Día de la Inmaculada Concepción de María",reason:"Celebración religiosa y feriado nacional."},
   {at:"2026-12-25",name:"Navidad",reason:"Celebración de Navidad y feriado nacional."},
   {at:"2027-01-01",name:"Año Nuevo",reason:"Primer día del nuevo año."},
+  {at:"2027-02-08",name:"Carnaval (lunes)",reason:"Primer día del feriado nacional de Carnaval (fecha a confirmar oficialmente para 2027)."},
+  {at:"2027-02-09",name:"Carnaval (martes)",reason:"Segundo día del feriado nacional de Carnaval (fecha a confirmar oficialmente para 2027)."},
   {at:"2027-03-24",name:"Día Nacional de la Memoria por la Verdad y la Justicia",reason:"Conmemoración de las víctimas de la última dictadura."},
   {at:"2027-04-02",name:"Día del Veterano y de los Caídos en la Guerra de Malvinas",reason:"Homenaje a veteranos y caídos en Malvinas."},
   {at:"2027-05-01",name:"Día del Trabajador",reason:"Reconocimiento de los derechos de las personas trabajadoras."},
