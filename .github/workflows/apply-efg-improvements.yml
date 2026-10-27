@@ -1,0 +1,66 @@
+name: Apply verified EFG Weather 2.0 improvements
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/apply-efg-improvements.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify package integrity and paths
+        run: |
+          echo "c36dbd40f0664fe3301f898c9db1b1b0a0c5c6da2967c70c1a2c22ffea9c9a92  .efg-weather-improvements.zip" | sha256sum --check
+          unzip -t .efg-weather-improvements.zip
+          unzip -Z -1 .efg-weather-improvements.zip | LC_ALL=C sort > /tmp/paths.actual
+          cat > /tmp/paths.expected <<'EOF'
+          artifacts/api-server/src/routes/index.ts
+          artifacts/api-server/src/routes/market.ts
+          artifacts/efg-weather/public/fragrances.json
+          artifacts/efg-weather/src/App.tsx
+          artifacts/efg-weather/src/components/CurrencyWidget.tsx
+          artifacts/efg-weather/src/components/EventCountdown.tsx
+          artifacts/efg-weather/src/components/FragranceSurvey.tsx
+          artifacts/efg-weather/src/components/fragrance-picker.css
+          artifacts/efg-weather/src/components/home-widgets.css
+          scripts/src/efg-browser-smoke.mjs
+          EOF
+          LC_ALL=C sort /tmp/paths.expected > /tmp/paths.expected.sorted
+          diff -u /tmp/paths.expected.sorted /tmp/paths.actual
+      - name: Apply updated source
+        run: |
+          unzip -oq .efg-weather-improvements.zip
+          rm .efg-weather-improvements.zip
+          test -f artifacts/api-server/src/routes/market.ts
+          test -f artifacts/efg-weather/src/components/CurrencyWidget.tsx
+          test -f artifacts/efg-weather/src/components/EventCountdown.tsx
+          test -f artifacts/efg-weather/src/components/FragranceSurvey.tsx
+      - name: Validate imported catalogue and UI contracts
+        run: |
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            const f=JSON.parse(fs.readFileSync('artifacts/efg-weather/public/fragrances.json','utf8')).fragrances;
+            if(f.length!==148||f.filter(x=>x.name.startsWith('Zara ')).length!==14)process.exit(1);
+            if(new Set(f.map(x=>x.id)).size!==f.length)process.exit(1);
+            const a=fs.readFileSync('artifacts/efg-weather/src/App.tsx','utf8');
+            if(!a.includes('<CurrencyWidget />')||!a.includes('<EventCountdown />'))process.exit(1);
+            const picker=fs.readFileSync('artifacts/efg-weather/src/components/FragranceSurvey.tsx','utf8');
+            if(!picker.includes('survey-perfume-dialog')||picker.includes('<datalist'))process.exit(1);
+            const api=fs.readFileSync('artifacts/api-server/src/routes/index.ts','utf8');
+            if(!api.includes('marketRouter'))process.exit(1);
+          "
+      - name: Commit implemented changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Implement countdown, ARS/USD/BRL converter, perfume selector and Zara expansion"
+            git push origin HEAD:main
+          fi
