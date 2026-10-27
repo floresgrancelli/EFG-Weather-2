@@ -1,0 +1,24 @@
+# EFG Weather 2.0 - dedicated Free Render web service.
+# One domain serves frontend and API; Neon provides PostgreSQL separately.
+# Requires an owner-controlled GitHub repository containing this project.
+services:
+  - type: web
+    name: efg-weather-2
+    runtime: node
+    plan: free
+    region: ohio
+    autoDeployTrigger: off
+    buildCommand: npm install -g pnpm@10.15.1 && pnpm install --frozen-lockfile --prod=false && PORT=3000 BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/efg-weather build && pnpm --filter @workspace/api-server build
+    startCommand: node artifacts/efg-weather/fullstack.mjs
+    healthCheckPath: /api/healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: PUBLIC_ORIGIN
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true

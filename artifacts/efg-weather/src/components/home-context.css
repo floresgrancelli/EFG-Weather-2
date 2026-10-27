@@ -1,0 +1,53 @@
+/* Current sky glyph inside the hero ring */
+.sky-ring--weather { width: clamp(200px, 23vw, 240px); }
+.sky-ring--weather .ring-content { gap: 0; }
+.sky-ring--weather .ring-kicker { font-size: 9px; letter-spacing: .9px; }
+.current-sky-icon { position: relative; width: 64px; height: 64px; margin: 0 0 3px; color: #f3d3a6; display: grid; place-items: center; flex: none; }
+.current-sky-icon svg { position: relative; width: 100%; height: 100%; overflow: visible; }
+.current-sky-icon[data-condition="clear"][data-phase="day"]::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; background: radial-gradient(circle, #f5d29e40, #f5d29e0a 48%, transparent 72%); pointer-events: none; }
+.current-sky-icon .sky-cloud { color: #eef2f8; }
+.current-sky-icon .sky-cloud--dark { color: #c9d3e2; }
+.current-sky-icon .sky-drops, .current-sky-icon .sky-fog, .current-sky-icon .sky-snow { color: #dbe6f3; }
+.current-sky-icon .sky-bolt { color: #f2c27f; }
+.current-sky-icon[data-condition="unknown"] { color: #dbe3ee; }
+.sky-ring--weather .ring-temp { margin: 3px 0 2px; }
+.sky-ring--weather .ring-temp:not(.ring-temp--missing) { font-size: clamp(68px, 8vw, 82px); }
+.sky-ring--weather .ring-temp--missing { font-size: 19px; letter-spacing: -.3px; line-height: 1.3; margin: 9px 0; }
+
+@media (max-width: 760px) {
+  .sky-ring--weather { width: clamp(190px, 52vw, 212px); }
+  .sky-ring--weather .current-sky-icon { width: 56px; height: 56px; margin-bottom: 2px; }
+  .sky-ring--weather .ring-temp:not(.ring-temp--missing) { font-size: clamp(62px, 17vw, 72px); }
+}
+@media (max-width: 430px) {
+  .hero-main:has(.sky-ring--weather) { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .hero-main:has(.sky-ring--weather) .sky-ring--weather { align-self: center; width: clamp(190px, 58vw, 210px); }
+}
+@media (max-width: 340px) {
+  .hero-main:has(.sky-ring--weather) .sky-ring--weather { width: 190px; }
+  .sky-ring--weather .ring-temp:not(.ring-temp--missing) { font-size: 62px; }
+}
+
+/* Farmacia Palopoli sponsor */
+.palopoli-sponsor { margin-top: 18px; padding: 22px 20px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; border-radius: 16px; background: linear-gradient(180deg, #f6eee4, #f0e5d8); border: 1px solid #eadbca; color: #4e4a4b; box-shadow: 0 10px 28px #8a6d4d14; }
+.dark .palopoli-sponsor { background: linear-gradient(180deg, #332e33, #2c282d); border-color: #464047; color: #ece3d8; box-shadow: none; }
+.palopoli-label { font-size: 9px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #947455; padding: 3px 9px; border: 1px solid #d9c3a9; border-radius: 999px; }
+.dark .palopoli-label { color: #cdb497; border-color: #5b5048; }
+.palopoli-logo { position: relative; overflow: hidden; margin-top: 14px; width: 112px; height: 112px; border-radius: 50%; background: #fbfaf7; box-shadow: 0 0 0 1px #e3d3c0, 0 0 0 7px #ffffff55, 0 12px 26px #7a5d3c22; }
+.dark .palopoli-logo { box-shadow: 0 0 0 1px #5b5048, 0 0 0 7px #ffffff0a, 0 12px 26px #0004; }
+/* Reframe only the thumbnail's surrounding background; keep the complete original mark and colors. */
+.palopoli-logo img { position: absolute; width: 142%; max-width: none; height: auto; left: 50%; top: -10%; transform: translateX(-50%); object-fit: contain; display: block; filter: none; }
+.palopoli-name { margin: 14px 0 2px; font: 800 22px/1.15 "Manrope", sans-serif; letter-spacing: -.5px; }
+.palopoli-slogan { margin: 0; font-size: 14px; font-weight: 500; }
+.palopoli-address { margin: 6px 0 0; font-size: 12px; color: #877a6f; }
+.dark .palopoli-address { color: #b9a999; }
+.palopoli-actions { margin-top: 16px; width: 100%; max-width: 420px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.palopoli-primary, .palopoli-secondary { min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 7px; border-radius: 10px; text-decoration: none; font-size: 13px; font-weight: 700; transition: transform .2s, background .2s; }
+.palopoli-primary { color: #fbf8f3; background: #536b87; }
+.palopoli-primary:hover { background: #435c7a; transform: translateY(-1px); }
+.palopoli-secondary { color: #6f6359; border: 1px solid #d9caba; background: #ffffff55; }
+.palopoli-secondary:hover { background: #fff9f2; }
+.dark .palopoli-secondary { color: #ddcebe; border-color: #59514c; background: #ffffff08; }
+.palopoli-primary:focus-visible, .palopoli-secondary:focus-visible { outline: 2px solid #c79a66; outline-offset: 2px; }
+@media (max-width: 380px) { .palopoli-actions { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .palopoli-primary, .palopoli-secondary { transition: none; } .palopoli-primary:hover { transform: none; } }

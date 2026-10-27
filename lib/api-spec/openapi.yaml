@@ -1,0 +1,229 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+paths:
+  /geolocation/reverse:
+    post:
+      operationId: reverseGeocode
+      summary: Nombre aproximado para GPS, solo por acción y consentimiento del usuario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ReverseLocationInput" }
+      responses:
+        "200":
+          description: Localidad o jurisdicción confirmada; nunca dirección
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [name, region, level, source]
+                properties:
+                  name: { type: string }
+                  region: { type: string }
+                  level: { type: string, enum: [locality, jurisdiction, unavailable] }
+                  source: { type: string }
+        "429":
+          description: Límite de consultas; mantener GPS sin nombre
+  /community/reports:
+    get:
+      operationId: listCommunityReports
+      summary: Reportes activos, aproximados y no verificados
+      parameters:
+        - { in: query, name: latitude, schema: { type: number, minimum: -85, maximum: 85 } }
+        - { in: query, name: longitude, schema: { type: number, minimum: -180, maximum: 180 } }
+        - { in: query, name: category, schema: { type: string, enum: [hail, rain, flood, wind, other] } }
+        - { in: query, name: maxAgeMinutes, schema: { type: integer, minimum: 5, maximum: 180 } }
+        - { in: query, name: limit, schema: { type: integer, minimum: 1, maximum: 50 } }
+        - { in: query, name: cursor, schema: { type: string, maxLength: 300 } }
+      responses:
+        "200":
+          description: Reportes reales activos
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CommunityFeed" }
+    post:
+      operationId: createCommunityReport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ReportInput" }
+      responses:
+        "201":
+          description: Reporte guardado
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CommunityReport" }
+  /community/reports/{id}/confirm:
+    post:
+      operationId: confirmCommunityReport
+      parameters:
+        - { in: path, name: id, required: true, schema: { type: string, format: uuid } }
+      responses:
+        "200":
+          description: Confirmación guardada una vez por navegador
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/CommunityReport" }
+  /community/reports/{id}:
+    delete:
+      operationId: deleteCommunityReport
+      parameters:
+        - { in: path, name: id, required: true, schema: { type: string, format: uuid } }
+      responses:
+        "200":
+          description: Reporte propio eliminado
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ActionResult" }
+  /community/fragrance-choice:
+    get:
+      operationId: getFragranceChoice
+      responses:
+        "200":
+          description: Elección propia de hoy y resumen protegido
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/FragranceSurvey" }
+    put:
+      operationId: saveFragranceChoice
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/FragranceChoiceInput" }
+      responses:
+        "200":
+          description: Elección guardada
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/FragranceSurvey" }
+    delete:
+      operationId: deleteFragranceChoice
+      summary: Elimina todas las respuestas asociadas a este navegador
+      responses:
+        "200":
+          description: Respuestas eliminadas
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ActionResult" }
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  schemas:
+    ReverseLocationInput:
+      type: object
+      additionalProperties: false
+      required: [latitude, longitude, consent]
+      properties:
+        latitude: { type: number, minimum: -90, maximum: 90 }
+        longitude: { type: number, minimum: -180, maximum: 180 }
+        consent: { type: boolean }
+    ActionResult:
+      type: object
+      required: [ok]
+      properties:
+        ok: { type: boolean }
+    ReportInput:
+      type: object
+      required: [category, latitude, longitude, area, observedAt, consent]
+      properties:
+        category: { type: string, enum: [hail, rain, flood, wind, other] }
+        latitude: { type: number, minimum: -85, maximum: 85 }
+        longitude: { type: number, minimum: -180, maximum: 180 }
+        area: { type: string, minLength: 2, maxLength: 80 }
+        observedAt: { type: string, format: date-time }
+        consent: { type: boolean }
+    CommunityReport:
+      type: object
+      required: [id, category, latitude, longitude, area, observedAt, createdAt, expiresAt, confirmations, mine, confirmed]
+      properties:
+        id: { type: string }
+        category: { type: string, enum: [hail, rain, flood, wind, other] }
+        latitude: { type: number }
+        longitude: { type: number }
+        area: { type: string }
+        observedAt: { type: string, format: date-time }
+        createdAt: { type: string, format: date-time }
+        expiresAt: { type: string, format: date-time }
+        confirmations: { type: integer }
+        mine: { type: boolean }
+        confirmed: { type: boolean }
+    CommunityFeed:
+      type: object
+      required: [reports, serverTime, notice]
+      properties:
+        nextCursor: { type: string, nullable: true }
+        reports:
+          type: array
+          items: { $ref: "#/components/schemas/CommunityReport" }
+        serverTime: { type: string, format: date-time }
+        notice: { type: string }
+    FragranceChoiceInput:
+      type: object
+      required: [perfume, consent]
+      properties:
+        perfume: { type: string, minLength: 2, maxLength: 100 }
+        occasion: { type: string, enum: [daily, work, night, special] }
+        consent: { type: boolean }
+        cityConsent: { type: boolean }
+        city: { type: string, maxLength: 80 }
+        latitude: { type: number, minimum: -85, maximum: 85 }
+        longitude: { type: number, minimum: -180, maximum: 180 }
+    FragranceChoice:
+      type: object
+      required: [perfume, day, occasion, city, weatherAvailable]
+      properties:
+        perfume: { type: string }
+        day: { type: string }
+        occasion: { type: ["string", "null"] }
+        city: { type: ["string", "null"] }
+        weatherAvailable: { type: boolean }
+    FragranceAggregate:
+      type: object
+      required: [perfume, count]
+      properties:
+        perfume: { type: string }
+        count: { type: integer }
+    FragranceSurvey:
+      type: object
+      required: [choice, aggregates, notice]
+      properties:
+        choice:
+          oneOf:
+            - { $ref: "#/components/schemas/FragranceChoice" }
+            - { type: "null" }
+        aggregates:
+          type: array
+          items: { $ref: "#/components/schemas/FragranceAggregate" }
+        notice: { type: string }
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

@@ -1,0 +1,2425 @@
+{
+  "version": 3,
+  "notice": "EFG Weather 2.0: sugerencias editoriales, no medición científica ni inventario. Base masculina: Atlas Olfativo EFG 2026 (57 fichas; se excluyen nichos distintos de Xerjoff). Las adiciones editoriales muestran notas destacadas orientativas; no atribuir una pirámide oficial sin verificarla. No agregar fotos ajenas sin licencia.",
+  "fragrances": [
+    {
+      "id": "dior-sauvage-edt",
+      "name": "Dior Sauvage EDT",
+      "profile": "Masculino",
+      "family": "Aromática fresca y especiada",
+      "notes": {
+        "salida": "Bergamota de Calabria, pimienta",
+        "corazon": "Pimienta de Sichuan, lavanda, pimienta rosa, vetiver, pachulí, geranio, elemí",
+        "fondo": "Ambroxan, cedro, ládano"
+      },
+      "climate": [
+        "templado",
+        "calor"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Moderada; poca cantidad rinde.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "dior-homme-sport-edt",
+      "name": "Dior Homme Sport EDT",
+      "profile": "Masculino",
+      "family": "Cítrica amaderada",
+      "notes": {
+        "salida": "Limón, bergamota, aldehídos",
+        "corazon": "Elemí, pimienta rosa",
+        "fondo": "Maderas, olíbano, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera a moderada.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "acqua-di-gio-parfum",
+      "name": "Giorgio Armani Acqua di Giò Parfum",
+      "profile": "Masculino",
+      "family": "Acuática aromática",
+      "notes": {
+        "salida": "Notas marinas, bergamota",
+        "corazon": "Romero, salvia esclarea, geranio",
+        "fondo": "Olíbano, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Moderada.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "givenchy-gentleman-reserve-privee",
+      "name": "Givenchy Gentleman Réserve Privée",
+      "profile": "Masculino",
+      "family": "Amaderada atalcada",
+      "notes": {
+        "salida": "Bergamota",
+        "corazon": "Iris, castaña",
+        "fondo": "Whisky, maderas, ámbar"
+      },
+      "climate": [
+        "frio",
+        "templado"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Moderada a intensa; mejor con frío.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "givenchy-gentleman-society-sport",
+      "name": "Givenchy Gentleman Society Sport EDP",
+      "profile": "Masculino",
+      "family": "Amaderada aromática",
+      "notes": {
+        "salida": "Limón",
+        "corazon": "Vetiver, narciso",
+        "fondo": "Cedro"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera a moderada.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "terre-hermes-eau-givree",
+      "name": "Hermès Terre d’Hermès Eau Givrée",
+      "profile": "Masculino",
+      "family": "Cítrica mineral",
+      "notes": {
+        "salida": "Cidra",
+        "corazon": "Enebro, pimienta timur",
+        "fondo": "Minerales, maderas"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera y nítida.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "xerjoff-naxos",
+      "name": "Xerjoff Naxos",
+      "profile": "Masculino",
+      "family": "Ambarada aromática",
+      "seasons": [
+        "otoño",
+        "invierno"
+      ],
+      "notes": {
+        "salida": "Lavanda, bergamota, limón",
+        "corazon": "Miel, canela, cachemira, jazmín sambac",
+        "fondo": "Tabaco, vainilla, haba tonka"
+      },
+      "climate": [
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Intensa; una aplicación alcanza.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "lattafa-khamrah",
+      "name": "Lattafa Khamrah",
+      "profile": "Masculino",
+      "family": "Ambarada especiada",
+      "seasons": [
+        "otoño",
+        "invierno"
+      ],
+      "notes": {
+        "salida": "Canela, nuez moscada, bergamota",
+        "corazon": "Dátiles, praliné, nardos, Mahonial",
+        "fondo": "Vainilla, haba tonka, amberwood, mirra, benjuí, akigalawood"
+      },
+      "climate": [
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Intensa; evitá excederte en interiores.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "nautica-voyage-edt",
+      "name": "Nautica Voyage EDT",
+      "profile": "Masculino",
+      "family": "Verde acuática",
+      "notes": {
+        "salida": "Hojas verdes, manzana",
+        "corazon": "Loto, mimosa",
+        "fondo": "Almizcle, cedro, musgo de roble, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera.",
+      "sourceLabel": "Atlas del propietario, referencia aportada"
+    },
+    {
+      "id": "chanel-chance-eau-fraiche-edp",
+      "name": "Chanel Chance Eau Fraîche EDP",
+      "profile": "Femenino",
+      "family": "Cítrica, floral y amaderada",
+      "notes": {
+        "salida": "Cidra",
+        "corazon": "Jazmín",
+        "fondo": "Madera de teca"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Suave a moderada; más discreta en interiores.",
+      "sourceLabel": "Fuente oficial de la marca",
+      "sourceUrl": "https://www.chanel.com/ar/perfumes/p/136150/chance-eau-fraiche-eau-de-parfum-vaporizador/"
+    },
+    {
+      "id": "versace-bright-crystal-edt",
+      "name": "Versace Bright Crystal EDT",
+      "profile": "Femenino",
+      "family": "Floral frutal fresca",
+      "notes": {
+        "salida": "Yuzu, acorde helado, granada",
+        "corazon": "Peonía, magnolia, loto",
+        "fondo": "Caoba, ámbar vegetal, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera a moderada.",
+      "sourceLabel": "Fuente oficial aportada por el propietario",
+      "sourceUrl": "https://www.versace.com/ar/en/women/accessories/fragrances-body-care/bright-crystal/bright-crystal-edt-90-ml/R510032-R090MLS_RNUL.html"
+    },
+    {
+      "id": "armani-my-way-edp",
+      "name": "Armani My Way EDP",
+      "profile": "Femenino",
+      "family": "Floral blanca",
+      "notes": {
+        "salida": "Bergamota, azahar",
+        "corazon": "Nardos, jazmín",
+        "fondo": "Cedro, vainilla, almizcle blanco"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Moderada.",
+      "sourceLabel": "Armani Beauty, fuente aportada por el propietario"
+    },
+    {
+      "id": "ysl-libre-edp",
+      "name": "Yves Saint Laurent Libre EDP",
+      "profile": "Femenino",
+      "family": "Floral lavanda",
+      "notes": {
+        "destacadas": "Lavanda, azahar, almizcle, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Moderada a intensa.",
+      "sourceLabel": "Atlas del propietario, notas destacadas (no pirámide)"
+    },
+    {
+      "id": "lancome-la-vie-est-belle-edp",
+      "name": "Lancôme La Vie Est Belle EDP",
+      "profile": "Femenino",
+      "family": "Floral gourmand",
+      "seasons": [
+        "otoño",
+        "invierno"
+      ],
+      "notes": {
+        "destacadas": "Iris, pachulí, vainilla, azúcar"
+      },
+      "climate": [
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Intensa; poca cantidad.",
+      "sourceLabel": "Atlas del propietario, notas destacadas"
+    },
+    {
+      "id": "guerlain-mandarine-basilic",
+      "name": "Guerlain Mandarine Basilic EDT",
+      "profile": "Sin preferencia",
+      "family": "Cítrica aromática",
+      "notes": {
+        "destacadas": "Mandarina, albahaca, té verde"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Ligera.",
+      "sourceLabel": "Atlas del propietario, notas destacadas"
+    },
+    {
+      "id": "issey-miyake-sport",
+      "name": "Issey Miyake L’Eau d’Issey Sport",
+      "profile": "Masculino",
+      "family": "Amaderada aromática",
+      "notes": {
+        "salida": "Pomelo, bergamota",
+        "corazon": "Nuez moscada, cuero",
+        "fondo": "Vetiver, cedro de Virginia, ámbar gris"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Moderada; discreta en interiores.",
+      "sourceLabel": "Atlas del propietario, pirámide verificada aportada"
+    },
+    {
+      "id": "xerjoff-torino21",
+      "name": "Xerjoff Torino21",
+      "profile": "Masculino",
+      "family": "Aromática verde",
+      "notes": {
+        "salida": "Menta, limón, albahaca, tomillo",
+        "corazon": "Grosellas negras, lavanda, romero, jazmín",
+        "fondo": "Almizcle, verbena"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Moderada; no compenses el viento con más aplicaciones.",
+      "sourceLabel": "Atlas del propietario, pirámide verificada aportada"
+    },
+    {
+      "id": "givenchy-l-interdit-edp",
+      "name": "Givenchy L’Interdit EDP",
+      "profile": "Femenino",
+      "family": "Floral blanca amaderada",
+      "notes": {
+        "salida": "Bergamota, jengibre",
+        "corazon": "Azahar, jazmín sambac, nardos",
+        "fondo": "Pachulí, vetiver"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Moderada a intensa; poca cantidad en espacios cerrados.",
+      "sourceLabel": "Fuente oficial aportada por el propietario",
+      "sourceUrl": "https://www.givenchybeauty.com/int/en/p/l-interdit-P069001.html"
+    },
+    {
+      "id": "bleu-de-chanel-parfum",
+      "name": "Bleu de Chanel Parfum",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Ralladura de limón, menta, lavanda, sándalo"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "chanel-allure-homme-sport-eau-extreme",
+      "name": "Chanel Allure Homme Sport Eau Extrême",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Mandarina, menta, haba tonka, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "armani-code-edt",
+      "name": "Armani Code EDT",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Mandarina verde, lavanda, haba tonka, cedro"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "givenchy-gentleman-edp",
+      "name": "Givenchy Gentleman EDP",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Pimienta negra, iris, vainilla negra, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "givenchy-gentleman-society-ambree",
+      "name": "Givenchy Gentleman Society Ambrée",
+      "profile": "Masculino",
+      "family": "ámbar amaderado",
+      "notes": {
+        "destacadas": "Nuez moscada, iris, vetiver, tabaco, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "givenchy-gentleman-society-edp",
+      "name": "Givenchy Gentleman Society EDP",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Cardamomo, salvia, narciso, vetiver, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "givenchy-pour-homme-blue-label-edt-2024",
+      "name": "Givenchy Pour Homme Blue Label EDT 2024",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Cítricos, pimienta de Sichuan, davana, incienso"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "bvlgari-man-in-black",
+      "name": "Bvlgari Man in Black",
+      "profile": "Masculino",
+      "family": "ámbar especiado",
+      "notes": {
+        "destacadas": "Ron, tabaco, cuero, iris, haba tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "ysl-myslf-edp",
+      "name": "YSL MYSLF EDP",
+      "profile": "Masculino",
+      "family": "floral amaderada",
+      "notes": {
+        "destacadas": "Bergamota, azahar, Ambrofix, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "polo-blue-edp",
+      "name": "Polo Blue EDP",
+      "profile": "Masculino",
+      "family": "marina aromática",
+      "notes": {
+        "destacadas": "Notas marinas, bergamota, cardamomo, vetiver"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "montblanc-starwalker",
+      "name": "Montblanc Starwalker",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Bambú, bergamota, mandarina, sándalo, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "dolce-gabbana-k-edp",
+      "name": "Dolce & Gabbana K EDP",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Naranja sanguina, enebro, lavanda, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "dolce-gabbana-devotion-pour-homme",
+      "name": "Dolce & Gabbana Devotion Pour Homme",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Limón, café, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "kenzo-homme-eau-de-toilette-intense",
+      "name": "Kenzo Homme Eau de Toilette Intense",
+      "profile": "Masculino",
+      "family": "marina amaderada",
+      "notes": {
+        "destacadas": "Notas marinas, higo, vetiver, sándalo"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "jean-lowe-immortal",
+      "name": "Jean Lowe Immortal",
+      "profile": "Masculino",
+      "family": "cítrica ambarada",
+      "notes": {
+        "destacadas": "Jengibre, pomelo, bergamota, romero, ambroxan"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "jean-lowe-vibe",
+      "name": "Jean Lowe Vibe",
+      "profile": "Masculino",
+      "family": "cítrica frutal",
+      "notes": {
+        "destacadas": "Menta, cidra, grosella negra, damasco, higo"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "afnan-turathi-blue",
+      "name": "Afnan Turathi Blue",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Cítricos, madera, ámbar, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "afnan-turathi-electric",
+      "name": "Afnan Turathi Electric",
+      "profile": "Masculino",
+      "family": "frutal fresca",
+      "notes": {
+        "destacadas": "Pera, pomelo rosado, mandarina, manzana, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "afnan-9-am-dive",
+      "name": "Afnan 9 AM Dive",
+      "profile": "Masculino",
+      "family": "acuática aromática",
+      "notes": {
+        "destacadas": "Limón, menta, grosella negra, manzana, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "rasasi-hawas-ice",
+      "name": "Rasasi Hawas Ice",
+      "profile": "Masculino",
+      "family": "acuática frutal",
+      "notes": {
+        "destacadas": "Manzana, cítricos, ciruela, cardamomo, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "rasasi-daarej",
+      "name": "Rasasi Daarej",
+      "profile": "Masculino",
+      "family": "ámbar especiado",
+      "notes": {
+        "destacadas": "Comino, cardamomo, iris, rosa, vainilla, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "lattafa-the-kingdom",
+      "name": "Lattafa The Kingdom",
+      "profile": "Masculino",
+      "family": "ámbar aromática",
+      "notes": {
+        "destacadas": "Lavanda, menta, tabaco, vainilla, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "lattafa-liam-grey",
+      "name": "Lattafa Liam Grey",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Cardamomo, té negro, higo, iris, sándalo"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "lattafa-vintage-radio",
+      "name": "Lattafa Vintage Radio",
+      "profile": "Masculino",
+      "family": "ámbar amaderada",
+      "notes": {
+        "destacadas": "Lavanda, ciruela, palo santo, sándalo, oud"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "maison-alhambra-sceptre-malachite",
+      "name": "Maison Alhambra Sceptre Malachite",
+      "profile": "Masculino",
+      "family": "ámbar frutal",
+      "notes": {
+        "destacadas": "Mandarina, bergamota, grosella negra, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "maison-alhambra-dark-door-sport",
+      "name": "Maison Alhambra Dark Door Sport",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Limón, pomelo, jengibre, vetiver, lavanda"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "pendora-scents-allusion-eau-de-sport-extreme-edp",
+      "name": "Pendora Scents Allusion Eau de Sport Extreme EDP",
+      "profile": "Masculino",
+      "family": "amaderada fougère",
+      "notes": {
+        "destacadas": "Mandarina, menta, ciprés, pimienta, tonka"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "police-to-be-my-avatar-for-man",
+      "name": "Police To Be My.Avatar for Man",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Cardamomo, naranja, ron, cacao, madera"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "zara-sunrise-on-the-red-sand-dunes-edp",
+      "name": "Zara Sunrise on the Red Sand Dunes EDP",
+      "profile": "Masculino",
+      "family": "cítrica aromática",
+      "notes": {
+        "destacadas": "Bergamota, jengibre, mandarina, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "zara-sunrise-on-the-red-sand-dunes-intense",
+      "name": "Zara Sunrise on the Red Sand Dunes Intense",
+      "profile": "Masculino",
+      "family": "cítrica floral",
+      "notes": {
+        "destacadas": "Mandarina, jengibre, flor de azahar, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "zara-vibrant-leather",
+      "name": "Zara Vibrant Leather",
+      "profile": "Masculino",
+      "family": "cítrica cuero",
+      "notes": {
+        "destacadas": "Bergamota, limón, cuero, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "zara-bogoss-vibrant-leather",
+      "name": "Zara Bogoss Vibrant Leather",
+      "profile": "Masculino",
+      "family": "amaderada frutal",
+      "notes": {
+        "destacadas": "Limón, pomelo, piña, cuero, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "adolfo-dominguez-agua-fresca-citrus-cedro-edt",
+      "name": "Adolfo Domínguez Agua Fresca Citrus Cedro EDT",
+      "profile": "Masculino",
+      "family": "cítrica aromática",
+      "notes": {
+        "destacadas": "Pomelo, cedrón, menta, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "maison-alhambra-pacific-blue",
+      "name": "Maison Alhambra Pacific Blue",
+      "profile": "Masculino",
+      "family": "cítrica floral",
+      "notes": {
+        "destacadas": "Cítricos, romero, lavanda, neroli, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "maison-alhambra-man-black-edition-edp",
+      "name": "Maison Alhambra Man Black Edition EDP",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Nuez moscada, violeta, pachulí, incienso, tabaco"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "armaf-club-de-nuit-precieux-i",
+      "name": "Armaf Club de Nuit Précieux I",
+      "profile": "Masculino",
+      "family": "ámbar amaderada",
+      "notes": {
+        "destacadas": "Piña, caramelo, cítricos, musgo, ambroxan"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "lattafa-sherif-edp",
+      "name": "Lattafa Sherif EDP",
+      "profile": "Masculino",
+      "family": "amaderada fresca",
+      "notes": {
+        "destacadas": "Manzana, petitgrain, bergamota, cedro, cachemira"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "ricky-sarkany-why-not-magnetic-for-him-edp",
+      "name": "Ricky Sarkany Why Not Magnetic For Him EDP",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Especias, tangerina, cedro, incienso, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "maison-alhambra-jean-lowe-azure-edp",
+      "name": "Maison Alhambra Jean Lowe Azure EDP",
+      "profile": "Masculino",
+      "family": "cítrica fresca",
+      "notes": {
+        "destacadas": "Mandarina, bergamota, naranja, jengibre, ámbar gris"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "house-of-armaf-fragaby-2-edp",
+      "name": "House of Armaf Fragaby 2 EDP",
+      "profile": "Masculino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Bergamota, mandarina, mango, ciruela, azahar, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "afnan-turathi-brown",
+      "name": "Afnan Turathi Brown",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Ámbar, pachulí, especias, vainilla, rosa"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Atlas Olfativo EFG 2026 · ficha documental"
+    },
+    {
+      "id": "ysl-y-eau-de-parfum",
+      "name": "YSL Y Eau de Parfum",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Manzana, jengibre, salvia, enebro, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "jean-paul-gaultier-le-male-le-parfum",
+      "name": "Jean Paul Gaultier Le Male Le Parfum",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Cardamomo, lavanda, iris, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "jean-paul-gaultier-le-beau-le-parfum",
+      "name": "Jean Paul Gaultier Le Beau Le Parfum",
+      "profile": "Masculino",
+      "family": "amaderada ambarada",
+      "notes": {
+        "destacadas": "Coco, piña, iris, tonka, sándalo"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rabanne-invictus-edt",
+      "name": "Rabanne Invictus EDT",
+      "profile": "Masculino",
+      "family": "acuática amaderada",
+      "notes": {
+        "destacadas": "Pomelo, notas marinas, hojas de laurel, ámbar gris"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rabanne-1-million-edt",
+      "name": "Rabanne 1 Million EDT",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Mandarina, menta, canela, cuero, ámbar"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "versace-dylan-blue",
+      "name": "Versace Dylan Blue",
+      "profile": "Masculino",
+      "family": "acuática aromática",
+      "notes": {
+        "destacadas": "Pomelo, bergamota, hoja de higuera, incienso"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "versace-eros-edt",
+      "name": "Versace Eros EDT",
+      "profile": "Masculino",
+      "family": "aromática dulce",
+      "notes": {
+        "destacadas": "Menta, manzana verde, vainilla, tonka"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "versace-eros-flame",
+      "name": "Versace Eros Flame",
+      "profile": "Masculino",
+      "family": "cítrica especiada",
+      "notes": {
+        "destacadas": "Naranja, pimienta, romero, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "montblanc-explorer-edp",
+      "name": "Montblanc Explorer EDP",
+      "profile": "Masculino",
+      "family": "amaderada aromática",
+      "notes": {
+        "destacadas": "Bergamota, vetiver, pachulí, cuero"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "montblanc-legend-spirit",
+      "name": "Montblanc Legend Spirit",
+      "profile": "Masculino",
+      "family": "cítrica acuática",
+      "notes": {
+        "destacadas": "Pomelo, bergamota, lavanda, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "azzaro-the-most-wanted-parfum",
+      "name": "Azzaro The Most Wanted Parfum",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Jengibre, maderas, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "azzaro-wanted-by-night",
+      "name": "Azzaro Wanted by Night",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Canela, mandarina, cedro, tabaco"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "viktor-rolf-spicebomb-extreme",
+      "name": "Viktor & Rolf Spicebomb Extreme",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Pimienta negra, comino, tabaco, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "prada-luna-rossa-ocean-edt",
+      "name": "Prada Luna Rossa Ocean EDT",
+      "profile": "Masculino",
+      "family": "aromática acuática",
+      "notes": {
+        "destacadas": "Bergamota, iris, lavanda, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "ysl-la-nuit-de-l-homme-edt",
+      "name": "YSL La Nuit de L'Homme EDT",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Cardamomo, lavanda, cedro, vetiver"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "armani-stronger-with-you-intensely",
+      "name": "Armani Stronger With You Intensely",
+      "profile": "Masculino",
+      "family": "ámbar vainilla",
+      "notes": {
+        "destacadas": "Vainilla, gamuza, ámbar, toffee"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "dolce-gabbana-the-one-edp",
+      "name": "Dolce & Gabbana The One EDP",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Pomelo, jengibre, cardamomo, tabaco, ámbar"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "hugo-boss-bottled-edt",
+      "name": "Hugo Boss Bottled EDT",
+      "profile": "Masculino",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Manzana, ciruela, canela, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "mercedes-benz-club-black",
+      "name": "Mercedes-Benz Club Black",
+      "profile": "Masculino",
+      "family": "ámbar vainilla",
+      "notes": {
+        "destacadas": "Bergamota, incienso, vainilla, ambroxan"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "halloween-man-x",
+      "name": "Halloween Man X",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Café, whisky, canela, cardamomo, ámbar"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-asad",
+      "name": "Lattafa Asad",
+      "profile": "Masculino",
+      "family": "ámbar especiada",
+      "notes": {
+        "destacadas": "Pimienta negra, tabaco, vainilla, ámbar"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "armaf-club-de-nuit-intense-man-edt",
+      "name": "Armaf Club de Nuit Intense Man EDT",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Limón, piña, abedul, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "afnan-9-pm",
+      "name": "Afnan 9 PM",
+      "profile": "Masculino",
+      "family": "ámbar frutal",
+      "notes": {
+        "destacadas": "Manzana, canela, lavanda, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rasasi-hawas-for-him",
+      "name": "Rasasi Hawas For Him",
+      "profile": "Masculino",
+      "family": "acuática frutal",
+      "notes": {
+        "destacadas": "Manzana, bergamota, canela, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "dior-j-adore-edp",
+      "name": "Dior J'adore EDP",
+      "profile": "Femenino",
+      "family": "floral",
+      "notes": {
+        "destacadas": "Jazmín, rosa, ylang-ylang, pera"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "dior-miss-dior-edp",
+      "name": "Dior Miss Dior EDP",
+      "profile": "Femenino",
+      "family": "floral",
+      "notes": {
+        "destacadas": "Rosa, iris, lirio del valle, almizcle"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "chanel-coco-mademoiselle-edp",
+      "name": "Chanel Coco Mademoiselle EDP",
+      "profile": "Femenino",
+      "family": "floral ambarada",
+      "notes": {
+        "destacadas": "Naranja, rosa, jazmín, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "chanel-chance-eau-tendre-edt",
+      "name": "Chanel Chance Eau Tendre EDT",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Pomelo, membrillo, jazmín, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "ysl-black-opium-edp",
+      "name": "YSL Black Opium EDP",
+      "profile": "Femenino",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Café, flores blancas, vainilla, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "carolina-herrera-good-girl-edp",
+      "name": "Carolina Herrera Good Girl EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Jazmín, tuberosa, cacao, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "carolina-herrera-very-good-girl-edp",
+      "name": "Carolina Herrera Very Good Girl EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Lichi, grosella roja, rosa, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "giorgio-armani-si-edp",
+      "name": "Giorgio Armani Sì EDP",
+      "profile": "Femenino",
+      "family": "chipre frutal",
+      "notes": {
+        "destacadas": "Cassis, rosa, vainilla, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "giorgio-armani-my-way-nectar",
+      "name": "Giorgio Armani My Way Nectar",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Pera, flor de azahar, tuberosa, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "valentino-donna-born-in-roma-edp",
+      "name": "Valentino Donna Born in Roma EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Grosella negra, jazmín, vainilla bourbon"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "prada-paradoxe-edp",
+      "name": "Prada Paradoxe EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Neroli, flor de azahar, jazmín, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lancome-idole-edp",
+      "name": "Lancôme Idôle EDP",
+      "profile": "Femenino",
+      "family": "floral",
+      "notes": {
+        "destacadas": "Rosa, jazmín, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lancome-tresor-edp",
+      "name": "Lancôme Trésor EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Rosa, durazno, ámbar, sándalo"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "versace-dylan-purple-edp",
+      "name": "Versace Dylan Purple EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Pera, naranja amarga, fresia, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "versace-yellow-diamond-edt",
+      "name": "Versace Yellow Diamond EDT",
+      "profile": "Femenino",
+      "family": "cítrica floral",
+      "notes": {
+        "destacadas": "Limón, pera, nenúfar, fresia"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "viktor-rolf-flowerbomb-edp",
+      "name": "Viktor & Rolf Flowerbomb EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Jazmín, rosa, orquídea, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "mugler-alien-edp",
+      "name": "Mugler Alien EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Jazmín sambac, ámbar, cachemira"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "mugler-angel-edp",
+      "name": "Mugler Angel EDP",
+      "profile": "Femenino",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Caramelo, chocolate, pachulí, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "narciso-rodriguez-for-her-edt",
+      "name": "Narciso Rodriguez For Her EDT",
+      "profile": "Femenino",
+      "family": "almizclada floral",
+      "notes": {
+        "destacadas": "Osmanthus, azahar, almizcle, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "gucci-flora-gorgeous-gardenia-edp",
+      "name": "Gucci Flora Gorgeous Gardenia EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Gardenia, flor de peral, azúcar moreno"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "gucci-bloom-edp",
+      "name": "Gucci Bloom EDP",
+      "profile": "Femenino",
+      "family": "floral blanca",
+      "notes": {
+        "destacadas": "Jazmín, nardos, madreselva"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rabanne-fame-edp",
+      "name": "Rabanne Fame EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Mango, jazmín, incienso, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rabanne-olympea-edp",
+      "name": "Rabanne Olympéa EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Jazmín de agua, vainilla salada, ámbar gris"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "jean-paul-gaultier-la-belle-edp",
+      "name": "Jean Paul Gaultier La Belle EDP",
+      "profile": "Femenino",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Pera, vainilla, vetiver"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "jean-paul-gaultier-scandal-edp",
+      "name": "Jean Paul Gaultier Scandal EDP",
+      "profile": "Femenino",
+      "family": "chipre floral",
+      "notes": {
+        "destacadas": "Miel, gardenia, naranja sanguina, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "dolce-gabbana-light-blue-edt-for-women",
+      "name": "Dolce & Gabbana Light Blue EDT for Women",
+      "profile": "Femenino",
+      "family": "cítrica frutal",
+      "notes": {
+        "destacadas": "Limón siciliano, manzana verde, bambú, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "burberry-her-edp",
+      "name": "Burberry Her EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Frutos rojos, jazmín, almizcle, ámbar"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "chloe-edp",
+      "name": "Chloé EDP",
+      "profile": "Femenino",
+      "family": "floral",
+      "notes": {
+        "destacadas": "Peonía, rosa, fresia, cedro"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "marc-jacobs-daisy-edt",
+      "name": "Marc Jacobs Daisy EDT",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Frutilla, hojas de violeta, jazmín, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "dkny-be-delicious-edp",
+      "name": "DKNY Be Delicious EDP",
+      "profile": "Femenino",
+      "family": "frutal fresca",
+      "notes": {
+        "destacadas": "Manzana verde, pepino, magnolia, sándalo"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "nina-ricci-nina-edt",
+      "name": "Nina Ricci Nina EDT",
+      "profile": "Femenino",
+      "family": "cítrica dulce",
+      "notes": {
+        "destacadas": "Limón, manzana, praliné, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "calvin-klein-euphoria-edp",
+      "name": "Calvin Klein Euphoria EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Granada, loto, orquídea negra, caoba"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "moschino-toy-2-edp",
+      "name": "Moschino Toy 2 EDP",
+      "profile": "Femenino",
+      "family": "floral almizclada",
+      "notes": {
+        "destacadas": "Manzana, mandarina, magnolia, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "ariana-grande-cloud-edp",
+      "name": "Ariana Grande Cloud EDP",
+      "profile": "Femenino",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Lavanda, pera, coco, praliné, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-yara-edp",
+      "name": "Lattafa Yara EDP",
+      "profile": "Femenino",
+      "family": "floral gourmand",
+      "notes": {
+        "destacadas": "Orquídea, heliotropo, frutas tropicales, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-yara-tous-edp",
+      "name": "Lattafa Yara Tous EDP",
+      "profile": "Femenino",
+      "family": "frutal tropical",
+      "notes": {
+        "destacadas": "Mango, coco, maracuyá, vainilla"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-fakhar-rose-edp",
+      "name": "Lattafa Fakhar Rose EDP",
+      "profile": "Femenino",
+      "family": "floral blanca",
+      "notes": {
+        "destacadas": "Nardos, jazmín, azahar, rosa"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-mayar-edp",
+      "name": "Lattafa Mayar EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Frambuesa, lichi, rosa, peonía"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-nebras-edp",
+      "name": "Lattafa Nebras EDP",
+      "profile": "Femenino",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Frutos rojos, cacao, vainilla, almizcle"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "armaf-club-de-nuit-woman-edp",
+      "name": "Armaf Club de Nuit Woman EDP",
+      "profile": "Femenino",
+      "family": "chipre floral",
+      "notes": {
+        "destacadas": "Bergamota, rosa, jazmín, pachulí"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "armaf-club-de-nuit-intense-woman-edp",
+      "name": "Armaf Club de Nuit Intense Woman EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Rosa, geranio, azafrán, oud"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "afnan-9-am-pour-femme-edp",
+      "name": "Afnan 9 AM Pour Femme EDP",
+      "profile": "Femenino",
+      "family": "floral frutal",
+      "notes": {
+        "destacadas": "Mandarina, pomelo, frambuesa, violeta"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "maison-alhambra-delilah-edp",
+      "name": "Maison Alhambra Delilah EDP",
+      "profile": "Femenino",
+      "family": "floral",
+      "notes": {
+        "destacadas": "Rosa, lichi, peonía, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "maison-alhambra-kismet-for-women-edp",
+      "name": "Maison Alhambra Kismet for Women EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Azahar, rosa, vainilla, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "rasasi-hawas-for-her-edp",
+      "name": "Rasasi Hawas For Her EDP",
+      "profile": "Femenino",
+      "family": "frutal floral",
+      "notes": {
+        "destacadas": "Pomelo, jazmín, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "elizabeth-arden-green-tea-edt",
+      "name": "Elizabeth Arden Green Tea EDT",
+      "profile": "Femenino",
+      "family": "cítrica verde",
+      "notes": {
+        "destacadas": "Té verde, limón, menta, musgo"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "elizabeth-arden-white-tea-edt",
+      "name": "Elizabeth Arden White Tea EDT",
+      "profile": "Femenino",
+      "family": "almizclada fresca",
+      "notes": {
+        "destacadas": "Mandarina, salvia, té blanco, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "guerlain-mon-guerlain-edp",
+      "name": "Guerlain Mon Guerlain EDP",
+      "profile": "Femenino",
+      "family": "ámbar floral",
+      "notes": {
+        "destacadas": "Lavanda, jazmín, sándalo, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "guerlain-aqua-allegoria-flora-salvaggia",
+      "name": "Guerlain Aqua Allegoria Flora Salvaggia",
+      "profile": "Femenino",
+      "family": "floral acuática",
+      "notes": {
+        "destacadas": "Flores silvestres, sandía, iris, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-bade-e-al-oud-sublime",
+      "name": "Lattafa Bade'e Al Oud Sublime",
+      "profile": "Sin preferencia",
+      "family": "frutal amaderada",
+      "notes": {
+        "destacadas": "Manzana, lichi, rosa, vainilla, musgo"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-ana-abiyedh-rouge",
+      "name": "Lattafa Ana Abiyedh Rouge",
+      "profile": "Sin preferencia",
+      "family": "ámbar amaderada",
+      "notes": {
+        "destacadas": "Pera, naranja, ámbar, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "al-haramain-amber-oud-gold-edition",
+      "name": "Al Haramain Amber Oud Gold Edition",
+      "profile": "Sin preferencia",
+      "family": "ámbar frutal",
+      "notes": {
+        "destacadas": "Melón, piña, ámbar, almizcle"
+      },
+      "climate": [
+        "calor",
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "swiss-arabian-shaghaf-oud",
+      "name": "Swiss Arabian Shaghaf Oud",
+      "profile": "Sin preferencia",
+      "family": "ámbar oud",
+      "notes": {
+        "destacadas": "Azafrán, oud, rosa, vainilla"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-oud-for-glory",
+      "name": "Lattafa Oud for Glory",
+      "profile": "Sin preferencia",
+      "family": "amaderada especiada",
+      "notes": {
+        "destacadas": "Azafrán, nuez moscada, oud, pachulí"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "lattafa-khamrah-qahwa",
+      "name": "Lattafa Khamrah Qahwa",
+      "profile": "Sin preferencia",
+      "family": "ámbar gourmand",
+      "notes": {
+        "destacadas": "Café, canela, cardamomo, vainilla, tonka"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": true,
+      "night": true,
+      "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
+      "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    }
+  ]
+}
