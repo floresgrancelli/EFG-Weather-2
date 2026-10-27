@@ -1,0 +1,27 @@
+name: Public EFG Weather 2.0 smoke test
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/test-weather-live.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify home and health
+        run: |
+          curl -fLsS --retry 3 --retry-all-errors --retry-delay 8 --max-time 110 https://efg-weather-2.onrender.com/ -o /tmp/home.html
+          grep -q 'EFG Weather' /tmp/home.html
+          curl -fLsS --retry 3 --retry-all-errors --retry-delay 8 --max-time 110 https://efg-weather-2.onrender.com/api/healthz -o /tmp/health.json
+          jq -e '.status=="ok"' /tmp/health.json
+      - name: Verify fragrance catalog (Zara and 148 options)
+        run: |
+          curl -fLsS --retry 3 --retry-all-errors --retry-delay 8 --max-time 110 https://efg-weather-2.onrender.com/fragrances.json -o /tmp/catalog.json
+          jq -e '.fragrances | length >= 148' /tmp/catalog.json
+          jq -e '[.fragrances[] | select(.name | startswith("Zara"))] | length >= 14' /tmp/catalog.json
+      - name: Verify currency API uses real BCRA values
+        run: |
+          curl -fLsS --retry 2 --retry-all-errors --retry-delay 10 --max-time 110 https://efg-weather-2.onrender.com/api/market/fx -o /tmp/fx.json
+          jq -e '.rates.USD>0 and .rates.BRL>0 and (.asOf|length)==10 and (.source|contains("BCRA"))' /tmp/fx.json
