@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
-import { AlertTriangle, Trash2 } from "lucide-react";
+import { AlertTriangle, Search, Trash2, X } from "lucide-react";
+import "./fragrance-picker.css";
 import { useGetFragranceChoice, getGetFragranceChoiceQueryKey, useSaveFragranceChoice, useDeleteFragranceChoice } from "@workspace/api-client-react";
 import type { FragranceChoiceInput, FragranceChoiceInputOccasion } from "@workspace/api-client-react";
 import type { Location } from "../lib/weather";
@@ -16,6 +17,18 @@ export function FragranceSurvey({ location }: { location: Location }) {
   const survey = useGetFragranceChoice({ query: { queryKey: getGetFragranceChoiceQueryKey() } });
   const [catalog, setCatalog] = useState<Fragrance[]>([]);
   const [perfume, setPerfume] = useState("");
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [pickerQuery, setPickerQuery] = useState("");
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es-AR");
+  const results = catalog.filter(f => normalize(f.name).includes(normalize(pickerQuery.trim()))).slice(0, 60);
+  useEffect(() => {
+    if (!pickerOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const keyDown = (e: KeyboardEvent) => { if(e.key === "Escape")setPickerOpen(false) };
+    document.addEventListener("keydown",keyDown);
+    return () => { document.body.style.overflow = previous;document.removeEventListener("keydown",keyDown) };
+  }, [pickerOpen]);
   const [notFound, setNotFound] = useState(false);
   const [occasion, setOccasion] = useState<FragranceChoiceInputOccasion | "">("");
   const [consent, setConsent] = useState(false);
@@ -49,9 +62,9 @@ export function FragranceSurvey({ location }: { location: Location }) {
           <div className="row-actions"><button className="chip" onClick={startEdit} data-testid="button-survey-edit">Cambiar</button><button className="chip danger" onClick={() => window.confirm("¿Borrar todas tus respuestas de este navegador?") && remove.mutate()} disabled={remove.isPending} data-testid="button-survey-delete"><Trash2 size={14} /> Borrar mis respuestas</button></div>
         </div> : <div className="survey-form">
           <label className="field-label">Perfume
-            <input list={notFound ? undefined : "efg-fragrance-list"} value={perfume} maxLength={100} onChange={e => setPerfume(e.target.value)} placeholder={notFound ? "Escribí marca y nombre" : "Empezá a escribir…"} data-testid="input-survey-perfume" />
+            {notFound ? <input value={perfume} maxLength={100} onChange={e => setPerfume(e.target.value)} placeholder="Escribí marca y nombre" data-testid="input-survey-perfume" />
+              : <button type="button" className="efg-picker-trigger" onClick={() => {setPickerQuery("");setPickerOpen(true)}} data-testid="button-survey-perfume-picker"><Search size={16}/><span data-testid="input-survey-perfume">{perfume || "Buscar perfume en el catálogo…"}</span></button>}
           </label>
-          <datalist id="efg-fragrance-list">{catalog.map(f => <option key={f.id} value={f.name} />)}</datalist>
           <label className="check-line"><input type="checkbox" checked={notFound} onChange={e => setNotFound(e.target.checked)} data-testid="checkbox-survey-notfound" /> No lo encuentro en la lista</label>
           {notFound && <p className="hint-line">Solo el nombre del perfume: sin enlaces ni datos personales.</p>}
           <label className="field-label">Ocasión (opcional)<select value={occasion} onChange={e => setOccasion(e.target.value as FragranceChoiceInputOccasion | "")} data-testid="select-survey-occasion"><option value="">Sin indicar</option>{OCC.map(o => <option key={o.id} value={o.id}>{o.label}</option>)}</select></label>
@@ -59,6 +72,17 @@ export function FragranceSurvey({ location }: { location: Location }) {
           <label className="check-line"><input type="checkbox" checked={cityConsent} onChange={e => setCityConsent(e.target.checked)} data-testid="checkbox-survey-city" /> Además, sumar mi ciudad ({location.name}). El servidor consulta el clima de la zona y no guarda coordenadas.</label>
           {save.isError && <p className="form-error" role="alert">{apiErrorMessage(save.error)}</p>}
           <div className="row-actions"><button className="primary-btn" disabled={!valid || save.isPending} onClick={submit} data-testid="button-survey-save">{save.isPending ? "Guardando…" : "Guardar respuesta"}</button>{editing && <button className="chip" onClick={() => setEditing(false)}>Cancelar</button>}</div>
+        </div>}
+        {pickerOpen && <div className="efg-picker-overlay" role="presentation" onMouseDown={e => {if(e.target === e.currentTarget)setPickerOpen(false)}}>
+          <section className="efg-picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-heading" data-testid="survey-perfume-dialog">
+            <div className="efg-picker-head"><h3 id="picker-heading">Elegí tu perfume</h3><button type="button" onClick={() => setPickerOpen(false)} aria-label="Cerrar lista"><X size={19}/></button></div>
+            <label className="efg-picker-search"><Search size={18}/><input type="search" value={pickerQuery} onChange={e=>setPickerQuery(e.target.value)} placeholder="Buscá por marca o fragancia" aria-label="Buscar perfume" data-testid="input-survey-perfume-search" autoComplete="off" /></label>
+            <div className="efg-picker-results" role="listbox" aria-label="Perfumes coincidentes" data-testid="survey-perfume-results">
+              {results.map(f=><button type="button" role="option" aria-selected={perfume===f.name} className="efg-picker-option" key={f.id} onClick={()=>{setPerfume(f.name);setPickerOpen(false);setNotFound(false)}} data-testid={`survey-perfume-option-${f.id}`}><strong>{f.name}</strong><small>{f.family}</small></button>)}
+              {!results.length&&<p className="efg-picker-empty">No encontramos coincidencias. Podés cargar el perfume manualmente.</p>}
+            </div>
+            <div className="efg-picker-footer"><button type="button" className="chip" onClick={()=>{setNotFound(true);setPerfume(pickerQuery.slice(0,100));setPickerOpen(false)}}>No está en la lista · cargar manualmente</button></div>
+          </section>
         </div>}
         {msg && <p className="hint-line" role="status">{msg}</p>}
         {remove.isError && <p className="form-error" role="alert">{apiErrorMessage(remove.error)}</p>}

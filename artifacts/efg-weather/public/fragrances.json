@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "notice": "EFG Weather 2.0: sugerencias editoriales, no medición científica ni inventario. Base masculina: Atlas Olfativo EFG 2026 (57 fichas; se excluyen nichos distintos de Xerjoff). Las adiciones editoriales muestran notas destacadas orientativas; no atribuir una pirámide oficial sin verificarla. No agregar fotos ajenas sin licencia.",
+  "notice": "EFG Weather 2.0: sugerencias editoriales, no medición científica ni inventario. Base masculina: Atlas Olfativo EFG 2026 (57 fichas; se excluyen nichos distintos de Xerjoff). Las adiciones editoriales muestran notas destacadas orientativas; no atribuir una pirámide oficial sin verificarla. No agregar fotos ajenas sin licencia. Zara: ampliación editorial a partir de listados oficiales; notas y clima orientativos.",
   "fragrances": [
     {
       "id": "dior-sauvage-edt",
@@ -2420,6 +2420,186 @@
       "night": true,
       "intensity": "Orientación editorial: ajustá las aplicaciones al entorno. En lugares cerrados, menos es más.",
       "sourceLabel": "Selección editorial · notas destacadas orientativas, no pirámide oficial"
+    },
+    {
+      "id": "zara-red-temptation-edp",
+      "name": "Zara Red Temptation EDP",
+      "profile": "Femenino",
+      "family": "ambarada floral",
+      "notes": {
+        "destacadas": "Ámbar, acordes florales (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-golden-decade-edp",
+      "name": "Zara Golden Decade EDP",
+      "profile": "Femenino",
+      "family": "floral cálida",
+      "notes": {
+        "destacadas": "Flores blancas, faceta avainillada (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-nude-bouquet-edp",
+      "name": "Zara Nude Bouquet EDP",
+      "profile": "Femenino",
+      "family": "floral suave",
+      "notes": {
+        "destacadas": "Acordes florales delicados (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-gardenia-edp",
+      "name": "Zara Gardenia EDP",
+      "profile": "Femenino",
+      "family": "floral dulce",
+      "notes": {
+        "destacadas": "Gardenia, matices cálidos (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-orchid-edp",
+      "name": "Zara Orchid EDP",
+      "profile": "Femenino",
+      "family": "floral fresca",
+      "notes": {
+        "destacadas": "Flores, matices frutales (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-hypnotic-vanilla-edp",
+      "name": "Zara Hypnotic Vanilla EDP",
+      "profile": "Femenino",
+      "family": "avainillada cálida",
+      "notes": {
+        "destacadas": "Vainilla, notas dulces (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/ar/es/mujer-belleza-perfumes-l1415.html"
+    },
+    {
+      "id": "zara-bogoss-vibrant-leather-elixir",
+      "name": "Zara Bogoss Vibrant Leather Elixir Parfum",
+      "profile": "Masculino",
+      "family": "cítrica amaderada",
+      "notes": {
+        "destacadas": "Bergamota, limón, piña, pomelo, cuero, cedro (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/es/es/hombre-accesorios-perfumes-l551.html"
+    },
+    {
+      "id": "zara-oud-vibrant-leather-edp",
+      "name": "Zara Oud Vibrant Leather EDP",
+      "profile": "Masculino",
+      "family": "amaderada intensa",
+      "notes": {
+        "destacadas": "Maderas, oud y facetas de cuero (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "templado",
+        "frio"
+      ],
+      "humidOk": false,
+      "night": true,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/es/es/hombre-accesorios-perfumes-l551.html"
+    },
+    {
+      "id": "zara-seoul-edt",
+      "name": "Zara Seoul EDT",
+      "profile": "Masculino",
+      "family": "fresca moderna",
+      "notes": {
+        "destacadas": "Acordes aromáticos frescos (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/es/es/hombre-accesorios-perfumes-l551.html"
+    },
+    {
+      "id": "zara-lisboa-edt",
+      "name": "Zara Lisboa EDT",
+      "profile": "Masculino",
+      "family": "aromática fresca",
+      "notes": {
+        "destacadas": "Cítricos y notas frescas (descripción editorial, no pirámide oficial)"
+      },
+      "climate": [
+        "calor",
+        "templado"
+      ],
+      "humidOk": true,
+      "night": false,
+      "intensity": "Orientación editorial: adaptar las aplicaciones al clima y entorno.",
+      "sourceLabel": "Zara · listado oficial (referencia de catálogo, notas orientativas)",
+      "sourceUrl": "https://www.zara.com/es/es/hombre-accesorios-perfumes-l551.html"
     }
   ]
 }

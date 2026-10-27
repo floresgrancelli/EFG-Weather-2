@@ -16,6 +16,8 @@ import "./modules.css";
 import { loadCatalog } from "./lib/extras";
 import type { Fragrance, Setting } from "./lib/extras";
 import { OfflineBanner, UpdatedAgo } from "./components/status-bits";
+import { CurrencyWidget } from "./components/CurrencyWidget";
+import { EventCountdown } from "./components/EventCountdown";
 import { NightOutCard } from "./components/NightOutCard";
 import { useWeatherRefresh } from "./hooks/useWeatherRefresh";
 import { useLocalCalendarDay } from "./hooks/useLocalCalendarDay";
@@ -240,6 +242,7 @@ function App() {
           <details className="location-privacy"><summary>Tu ubicación y tu privacidad</summary><p>El GPS preciso solo se usa en memoria para consultar Open-Meteo. Con otro permiso, al tocar “Usar mi ubicación” identificamos tu zona con Georef y OpenStreetMap/Nominatim usando coordenadas aproximadas (~100 m). No enviamos identidad ni dirección. Caché geográfica temporal de 10 minutos, sin historial. Los refrescos automáticos de GPS no llaman al geocodificador. Si no hay un nombre confirmado mostramos “Ubicación actual”. Los reportes requieren otro consentimiento y siempre respetamos la selección manual.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors · ODbL</a></details>
           {freshness.stale && <p role="status" className="gps-message" data-testid="weather-stale">Datos de hace más de 30 minutos o con horario de origen antiguo. {loading ? "Actualizando…" : "Podés reintentar con Actualizar."}</p>}
           {weatherState.error && weather && <p role="alert" className="gps-message">No pudimos renovar el clima. Conservamos el último dato con su hora original: {weatherState.error}</p>}
+          <CurrencyWidget />
           <section className={`hero-card ${current?.code !== null && current?.code !== undefined && current.code > 2 ? "hero-overcast" : ""}`} aria-label="Clima actual">
             <div className="hero-skywash" /><div className="hero-cloud-shape cloud-one" /><div className="hero-cloud-shape cloud-two" />
             <div className="hero-weather-top"><span className="live-label"><span /> AHORA MISMO</span><button className="refresh-button" onClick={refresh} disabled={loading} aria-label="Actualizar clima" data-testid="button-refresh-weather"><RefreshCw size={16} className={loading ? "spin" : ""} /> {loading ? "Actualizando" : "Actualizar"}</button></div>
@@ -262,6 +265,7 @@ function App() {
             <Metric icon={<Sun size={17} />} title="Índice UV" value={formatValue(currentHour?.uv)} detail="pronóstico de esta hora" />
           </section>
 
+          <EventCountdown />
           <div className="content-columns">
             <div className="forecast-column">
               <section className="section-card hourly-card">

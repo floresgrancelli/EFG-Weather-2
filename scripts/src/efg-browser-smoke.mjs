@@ -76,6 +76,10 @@ try {
     assert.equal(await fragranceHasNoOverlaps(), true, `Fragrance text overlaps at ${width}px`);
   }
   await call("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
+  await wait(`!!document.querySelector('[data-testid="currency-widget"]')`);
+  assert.ok(await evaluate(`!!document.querySelector('[data-testid="event-countdown"]')`));
+  const fxResponse = await evaluate(`fetch('/api/market/fx').then(r => r.ok ? r.json() : null).catch(() => null)`);
+  if(fxResponse) assert.ok(fxResponse.rates.USD > 0 && fxResponse.rates.BRL > 0 && fxResponse.asOf);
   await click("button-toggle-theme"); await click("button-toggle-theme");
   checks.push("Home: live apparent temperature, 24 hourly/7 daily forecasts, two fragrance profiles and no overlapping advice, exact night signature, sponsor links, theme");
   await click("mobile-nav-radar-y-alertas");
@@ -109,7 +113,14 @@ try {
   assert.ok(await evaluate(`document.body.innerText.includes("Confirmá y enviá") && document.body.innerText.includes("Ushuaia")`));
   // Do not submit a fictional weather observation.
   checks.push("Community: shared feed and manual-city geocoding, 3-step opt-in reporting flow (no fabricated observation submitted)");
-  await input("input-survey-perfume", "Chanel Chance Eau Fraîche EDP");
+  await click("button-survey-perfume-picker");
+  await wait(`!!document.querySelector('[data-testid="survey-perfume-dialog"]')`);
+  await input("input-survey-perfume-search", "Chanel Chance Eau Fraîche");
+  await wait(`!!document.querySelector('[data-testid="survey-perfume-results"] [role="option"]')`);
+  const firstResult = await evaluate(`document.querySelector('[data-testid="survey-perfume-results"] [role="option"]').dataset.testid`);
+  await click(firstResult);
+  await wait(`!document.querySelector('[data-testid="survey-perfume-dialog"]')`);
+  assert.ok(await evaluate(`document.querySelector('[data-testid="input-survey-perfume"]').textContent.includes("Chanel Chance")`));
   const consentId = await evaluate(`document.querySelector('input[data-testid*="survey"][data-testid*="consent"]').dataset.testid`);
   await click(consentId); await click("button-survey-save");
   await wait(`document.body.innerText.includes("Guardado. Gracias")`, 15000);
