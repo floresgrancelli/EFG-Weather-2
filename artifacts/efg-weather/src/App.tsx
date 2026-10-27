@@ -31,7 +31,7 @@ import { approximatePlace, locationKey, savedPlace, validPlace } from "./lib/loc
 import { LocationConsent } from "./components/LocationConsent";
 
 type Page = "Inicio" | "Agro" | "Comunidad" | "Más";
-type Profile = "Masculino" | "Femenino" | "Sin preferencia";
+type Profile = "Masculino" | "Femenino";
 type Theme = "light" | "dark";
 const pages: { name: Page; icon: typeof Sun }[] = [
   { name: "Inicio", icon: Sun },
@@ -92,7 +92,7 @@ function App() {
     const items = readStorage<unknown>("efg-favorites", presetLocations.slice(0, 1));
     return Array.isArray(items) ? items.filter(validPlace).map(savedPlace) : presetLocations.slice(0, 1);
   });
-  const [profile, setProfile] = useState<Profile>(() => readStorage("efg-profile", "Sin preferencia"));
+  const [profile, setProfile] = useState<Profile>(() => readStorage<unknown>("efg-profile", "Masculino") === "Femenino" ? "Femenino" : "Masculino");
   const [theme, setTheme] = useState<Theme>(() => readStorage("efg-theme", "light"));
   const [page, setPage] = useState<Page>("Inicio");
   const [weatherState, setWeatherState] = useState<{ key: string; data: Weather | null; loading: boolean; error: string }>({ key: "", data: null, loading: true, error: "" });
@@ -291,7 +291,7 @@ function App() {
                 {picked?.limitation && <p role="status">{picked.limitation}</p>}
                 {!advice && <p role="status">{catalog.length ? "No hay una referencia adecuada con los datos disponibles." : "El catálogo de fragancias todavía no está disponible."}</p>}
                 <button className="fragrance-trigger" onClick={() => setPerfumeOpen(!perfumeOpen)} aria-expanded={perfumeOpen} data-testid="button-fragrance-advice"><span className="fragrance-mark"><Sunset size={18} /></span><span className="fragrance-title"><small>RITUAL DEL DÍA</small><b>Una fragancia para hoy</b></span><ChevronDown size={17} className={perfumeOpen ? "chevron-open" : ""} /></button>
-                <div className="profile-pills" role="group" aria-label="Preferencia de fragancia">{(["Masculino", "Femenino", "Sin preferencia"] as Profile[]).map((option) => <button key={option} className={profile === option ? "selected" : ""} onClick={() => setProfile(option)} data-testid={`profile-${option.toLowerCase().replaceAll(" ", "-")}`}>{option}</button>)}</div>
+                <div className="profile-pills" role="group" aria-label="Preferencia de fragancia">{(["Masculino", "Femenino"] as Profile[]).map((option) => <button key={option} className={profile === option ? "selected" : ""} onClick={() => setProfile(option)} data-testid={`profile-${option.toLowerCase().replaceAll(" ", "-")}`}>{option}</button>)}</div>
                 <div className="profile-pills setting-pills" role="group" aria-label="Ocasión opcional">{([["", "Cualquier momento"], ["interior", "Interior"], ["exterior", "Exterior"], ["noche", "Noche"]] as [Setting, string][]).map(([id, label]) => <button key={id || "any"} className={setting === id ? "selected" : ""} onClick={() => setSetting(id)} data-testid={`setting-${id || "cualquiera"}`}>{label}</button>)}</div>
                 {advice && <div className="fragrance-advice"><span className="fragrance-family">{advice.family}</span><strong>{advice.name}</strong><span className="fragrance-intensity">{advice.intensity}</span><h3>¿Por qué funciona con este clima?</h3><p>{advice.why}</p>{perfumeOpen && <div className="fragrance-details">{advice.destacadas ? <span className="notes-wide"><b>Notas destacadas</b>{advice.destacadas}</span> : <><span><b>Salida</b>{advice.notes.salida}</span><span><b>Corazón</b>{advice.notes.corazon}</span><span><b>Fondo</b>{advice.notes.fondo}</span></>}{advice.alternatives.length > 0 && <small>También van bien hoy: {advice.alternatives.join(" · ")}</small>}{advice.sourceLabel && <small>{advice.sourceLabel}. No verificado de forma independiente con el fabricante salvo enlace oficial.</small>}<small>Inspiración olfativa, no una recomendación médica ni publicidad de producto.</small>{advice.source.startsWith("http") ? <a href={advice.source} target="_blank" rel="noreferrer">Consultar notas de fragancia <ExternalLink size={12} /></a> : <small>{advice.source}</small>}</div>}</div>}
                 <span className="editorial-disclosure">Sugerencia editorial independiente</span>

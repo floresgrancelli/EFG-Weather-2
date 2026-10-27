@@ -59,9 +59,25 @@ try {
   await click("button-fragrance-advice");
   await wait(`/notas|salida/i.test(document.body.innerText)`);
   assert.ok(await evaluate(`document.body.innerText.includes("¿Por qué funciona con este clima?")`));
-  await click("profile-sin-preferencia");
+  await click("profile-masculino");
+  assert.equal(await evaluate(`document.querySelector('[data-testid="profile-sin-preferencia"]')`), null, "Only male/female choices should be visible");
+  assert.equal(await evaluate(`document.querySelectorAll('[aria-label="Preferencia de fragancia"] button').length`), 2);
+  assert.equal(await evaluate(`document.querySelectorAll('[aria-label="Ocasión opcional"] button').length`), 4);
+  const fragranceHasNoOverlaps = () => evaluate(`(() => {
+    const card = document.querySelector('.fragrance-advice');
+    const items = ['.fragrance-family', 'strong', '.fragrance-intensity', 'h3', 'p'].map(s => card.querySelector(s));
+    if (items.some(x => !x)) return false;
+    const rectangles = items.map(x => x.getBoundingClientRect());
+    return rectangles.every((r,i) => i===0 || r.top >= rectangles[i-1].bottom - 1);
+  })()`);
+  for (const width of [320, 375, 390, 430]) {
+    await call("Emulation.setDeviceMetricsOverride", { width, height: 844, deviceScaleFactor: 1, mobile: true });
+    await sleep(100);
+    assert.equal(await fragranceHasNoOverlaps(), true, `Fragrance text overlaps at ${width}px`);
+  }
+  await call("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   await click("button-toggle-theme"); await click("button-toggle-theme");
-  checks.push("Home: live apparent temperature, 24 hourly/7 daily forecasts, perfume profiles, exact night signature, sponsor links, theme");
+  checks.push("Home: live apparent temperature, 24 hourly/7 daily forecasts, two fragrance profiles and no overlapping advice, exact night signature, sponsor links, theme");
   await click("mobile-nav-radar-y-alertas");
   await wait(`Number(document.querySelector('[data-testid="input-radar-frame"]')?.max)>1`, 30000);
   await wait(`!!document.querySelector('.leaflet-tile-pane img[src*="rainviewer.com"][src*="/radar/"]')?.complete`, 20000);

@@ -191,15 +191,17 @@ button { color: inherit; }
 .dark .fragrance-mark { background: #423d3a; }
 .fragrance-title { display: grid; gap: 3px; flex: 1; }.fragrance-title small { font-size: 8px; letter-spacing: 1px; color: var(--efg-muted); font-weight: 700; }.fragrance-title b { font: 700 12px "Manrope", sans-serif; }
 .fragrance-trigger > svg { color: var(--efg-muted); transition: transform .2s; }.chevron-open { transform: rotate(180deg); }
-.profile-pills { display: flex; gap: 4px; margin: 12px 0 10px; }
-.profile-pills button { flex: 1; min-width: 0; padding: 6px 2px; border: 1px solid var(--efg-line); border-radius: 6px; background: transparent; color: var(--efg-muted); font-size: 8px; cursor: pointer; }
+.profile-pills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 12px 0 10px; }
+.profile-pills button { min-width: 0; min-height: 36px; padding: 8px 6px; border: 1px solid var(--efg-line); border-radius: 8px; background: transparent; color: var(--efg-muted); font-size: 11px; line-height: 1.3; white-space: normal; overflow-wrap: anywhere; cursor: pointer; }
+.setting-pills { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .profile-pills button.selected { border-color: #c7b393; color: #896b4c; background: #f6f1e9; }
 .dark .profile-pills button.selected { color: #e5c797; background: #423d3a; }
-.fragrance-advice { position: relative; padding: 10px 0 2px; border-top: 1px solid var(--efg-line); display: grid; gap: 4px; }
-.fragrance-family { color: #b08254; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
-.fragrance-advice > strong { font: 700 14px "Manrope", sans-serif; }.fragrance-intensity { position: absolute; top: 11px; right: 0; color: var(--efg-muted); font-size: 9px; }
-.fragrance-advice p { margin: 3px 0 4px; color: var(--efg-muted); font-size: 10px; line-height: 1.5; }
-.fragrance-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding-top: 8px; border-top: 1px solid var(--efg-line); }
+.fragrance-advice { min-width: 0; padding: 12px 0 4px; border-top: 1px solid var(--efg-line); display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+.fragrance-family { display: block; color: #b08254; font-size: 9px; line-height: 1.45; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; overflow-wrap: anywhere; }
+.fragrance-advice > strong { display: block; min-width: 0; font: 700 16px/1.3 "Manrope", sans-serif; overflow-wrap: anywhere; }.fragrance-intensity { display: block; position: static; color: var(--efg-muted); font-size: 10px; line-height: 1.45; overflow-wrap: anywhere; }
+.fragrance-advice > h3 { margin: 4px 0 0; font: 700 14px/1.4 "Manrope", sans-serif; overflow-wrap: anywhere; }
+.fragrance-advice > p { margin: 0; color: var(--efg-muted); font-size: 11px; line-height: 1.65; overflow-wrap: anywhere; }
+.fragrance-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-top: 10px; border-top: 1px solid var(--efg-line); }
 .fragrance-details span { display: grid; gap: 3px; color: var(--efg-muted); font-size: 9px; }.fragrance-details b { color: var(--efg-ink); font-size: 8px; text-transform: uppercase; letter-spacing: .6px; }
 .fragrance-details > small { grid-column: 1 / -1; color: var(--efg-muted); font-size: 8px; line-height: 1.4; }
 .fragrance-details > a { grid-column: 1 / -1; display: flex; align-items: center; gap: 5px; color: var(--efg-blue); font-size: 9px; text-decoration: none; }
@@ -263,6 +265,7 @@ button { color: inherit; }
   .main-content { padding-left: 13px; padding-right: 13px; }.hero-card { padding-right: 13px; padding-left: 13px; }.hero-main { gap: 5px; }.sky-ring { width: 148px; }.ring-temp { font-size: 60px; }.hero-location { font-size: 22px; }
   .daily-row { grid-template-columns: 45px minmax(65px, 1fr) 35px minmax(80px, .95fr); gap: 3px; }.daily-condition small { max-width: 45px; }.daily-range i { width: 28px; }
   .mobile-bottom-nav button { min-width: 46px; font-size: 7px; }
+  .setting-pills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
