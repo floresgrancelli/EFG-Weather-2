@@ -1,0 +1,36 @@
+name: Import EFG Weather 2.0 source
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-weather-source.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify uploaded source package
+        run: |
+          echo "672ddda3ded6b0f05114a6dd6afd438db3627d62f037f2a4a00486c383198727  EFG_Weather_2_0_SOURCE.zip" | sha256sum --check
+          unzip -t EFG_Weather_2_0_SOURCE.zip | tail -1
+      - name: Expand original source safely
+        run: |
+          unzip -oq EFG_Weather_2_0_SOURCE.zip
+          test -f render.yaml
+          test -f pnpm-lock.yaml
+          test -f artifacts/efg-weather/src/App.tsx
+          test -f artifacts/efg-weather/public/fragrances.json
+      - name: Commit source into the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Expand EFG Weather 2.0 full source for Render"
+            git push origin HEAD:main
+          fi
