@@ -1,0 +1,38 @@
+name: Integrate Weather 2.0 improvements
+on:
+  push:
+    branches: [main]
+    paths:
+      - "EFG_Weather_2_0_Mejoras_3.zip"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify changeset
+        run: |
+          echo "89593452e222c087537d73508ec6cfa2b2712b1bb073eeacc96bd088350c2d55  EFG_Weather_2_0_Mejoras_3.zip" | sha256sum -c
+          unzip -t EFG_Weather_2_0_Mejoras_3.zip | tail -1
+      - name: Apply verified updates
+        run: |
+          unzip -oq EFG_Weather_2_0_Mejoras_3.zip
+          grep -q 'router.use(marketRouter)' artifacts/api-server/src/routes/index.ts
+          grep -q 'efg-picker-panel' artifacts/efg-weather/src/components/FragranceSurvey.tsx
+          test -f artifacts/efg-weather/src/components/EventCountdown.tsx
+          test -f artifacts/efg-weather/src/components/CurrencyWidget.tsx
+          node --check scripts/src/efg-browser-smoke.mjs
+          node -e "const c=require('./artifacts/efg-weather/public/fragrances.json');if(c.fragrances.length<148)process.exit(1)"
+      - name: Commit updated source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add artifacts/efg-weather/src artifacts/efg-weather/public/fragrances.json artifacts/api-server/src/routes scripts/src/efg-browser-smoke.mjs
+          if ! git diff --cached --quiet; then
+            git commit -m "Add FX converter, holiday countdown, Nutrition-style perfume picker and Zara options"
+            git push origin HEAD:main
+          fi
